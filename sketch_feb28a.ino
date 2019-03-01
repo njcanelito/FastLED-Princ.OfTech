@@ -17,7 +17,7 @@ void loop() {
     leds[i] = CRGB::Green;
     leds[(NUM_LEDS-i)] = CRGB::Red;
   }
-    for(int i=0;i<NUM_LEDS;i++){
+   for(int i=0;i<NUM_LEDS;i++){
     leds[i].fadeLightBy( 64 );
     leds[i] = CRGB::Blue;
     leds[(NUM_LEDS-i)] = CRGB::Red;
@@ -25,5 +25,14 @@ void loop() {
     delay(30);
     leds[i] = CRGB::Blue;
     leds[(NUM_LEDS-i)] = CRGB::Red;
+}
+  for(int i=0;i<NUM_LEDS;i++){
+    leds[i].fadeLightBy( 64 );
+    leds[i] = CRGB::Yellow;
+    leds[(NUM_LEDS-i)] = CRGB::Purple;
+    FastLED.show();
+    delay(30);
+    leds[i] = CRGB::Yellow;
+    leds[(NUM_LEDS-i)] = CRGB::Purple;
 }
 }
