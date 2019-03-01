@@ -35,4 +35,12 @@ void loop() {
     leds[i] = CRGB::Yellow;
     leds[(NUM_LEDS-i)] = CRGB::Purple;
 }
+  for(int i=0;i<NUM_LEDS;i++){
+    leds[i] = CRGB::Green;
+    leds[(NUM_LEDS-i)] = CRGB::Red;
+    FastLED.show();
+    delay(30);
+    leds[i] = CRGB::Black;
+    leds[(NUM_LEDS-i)] = CRGB::Black;
+}
 }
